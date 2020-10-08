@@ -1,17 +1,28 @@
 import React from "react";
 import "./About.css";
-import CutePic from "../../assets/bighappy.png";
+import CutePic from "../../assets/SUNADA-WONG_WARREN ROBERT.png";
+import { useState } from "react";
+
+function Button(props) {
+  return <div className="button" onClick={()=>{props.setButtonText('I want to be a member of the Harvard Computer Society!')}}>{props.buttonText}</div>;
+}
 
 export default function AboutScreen() {
+  const [buttonText, setButtonText] = useState("Click me")
+
   return (
     <div className="screen-background">
       <div className="intro-background">
         <div className="intro-item">
-          <div>here you'll put a picture of yourself</div>
+          <div>
+            <img src={CutePic} class="intro-picture"/>
+          </div>
         </div>
         <div className="intro-item">
-          Wow wow wow Your Name is a pretty cool person! check out all these
-          details
+          Hi. My name is Warren Sunada-Wong and I like computer science.
+        </div>
+        <div>
+          <Button buttonText={buttonText} setButtonText={setButtonText}></Button>
         </div>
       </div>
     </div>
