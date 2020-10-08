@@ -1,15 +1,11 @@
-## Your Name
+## Warren Sunada-Wong
 
 Welcome to my website!
 
 ### Added Feature #1
 
-Description
-
-Screenshots
+Added button on homepage to display more information
 
 ### Added Feature #2
 
-Description
-
-Screenshots
+Added forward/back buttons to scroll through projects on project page
